@@ -30,7 +30,6 @@ import { CountryPlaceholder } from "./pipes/country-placeholder";
     CommonModule,
     FormsModule,
     IonicModule,
-    IonicSelectableModule,
     HttpClientModule,
     TranslateModule.forChild({
       loader: {
@@ -45,6 +44,6 @@ import { CountryPlaceholder } from "./pipes/country-placeholder";
     }),
   ],
   exports: [IonIntlTelInputComponent, IonIntlTelInputValidatorDirective],
-  providers: [IonIntlTelInputService],
+  providers: [IonIntlTelInputService, IonicSelectableModule],
 })
 export class IonIntlTelInputModule {}
